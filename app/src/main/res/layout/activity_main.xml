@@ -32,7 +32,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/empty" />
+        app:srcCompat="@drawable/empty"
+        android:contentDescription="TODO" />
 
     <EditText
         android:id="@+id/editTextWeight"
@@ -48,7 +49,8 @@
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBMI" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMI"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextHeight"
@@ -61,10 +63,12 @@
         android:hint="@string/hint_height"
         android:inputType="number"
         android:minHeight="48dp"
+        android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextWeight"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/buttonCalculate"
@@ -73,6 +77,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/calculate"
+        android:textColor="#616161"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -83,6 +88,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/reset"
+        android:textColor="#616161"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
